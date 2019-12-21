@@ -2,7 +2,7 @@ FROM photon:latest
 MAINTAINER shawnho hos@vmware.com
 
 RUN tdnf update -y
-RUN yum install -y vim iproute iputils wget motd
+RUN yum install -y vim iproute iputils git wget motd
 RUN yum -y clean all
 RUN motdgen -o /etc/motd
 ADD motd /etc/motd

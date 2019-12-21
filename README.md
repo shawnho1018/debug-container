@@ -4,9 +4,13 @@ The only difference is this project is using Photon-OS as the base image and the
 
 ### Download
 * Docker
-`docker pull -it --rm --name debugger shawnho1976/library:debug-container /bin/bash`
+```
+docker pull -it --rm --name debugger shawnho1976/library:debug-container /bin/bash
+```
 * Kubernetes
-`kubectl run -it --rm --name debugger --image shawnho1976/library:debug-container -- /bin/bash`
+```
+kubectl run -it --rm --name debugger --image shawnho1976/library:debug-container -- /bin/bash
+```
 ### Build the image yourself
 ```
 git clone https://github.com/shawnho1018/debug-container.git
